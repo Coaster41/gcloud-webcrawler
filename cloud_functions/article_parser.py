@@ -1,5 +1,5 @@
 import requests # Allows us to get the actual HTML page
-from bs4 import BeautifulSoup, NavigableString # Spider / WebCrawler
+from bs4 import BeautifulSoup # Spider / WebCrawler
 
 def filterFunct(arrayOfLinks, addedUrl):
     setOfLinks = set()
@@ -41,6 +41,6 @@ def spiderParser(url):
         fullText = articleParser(link)
         # Do something here to transfer the full text & url to another function
         print(fullText)
-        break
+    return
 
-print(spiderParser("https://www.foxnews.com/"))
+spiderParser("https://www.foxnews.com/")
