@@ -14,15 +14,8 @@ def classify(text, min_confidence=0.7):
     result = []
 
     for category in categories:
-        # Turn the categories into a dictionary of the form:
-        # {category.name: category.confidence}, so that they can
-        # be treated as a sparse vector.
         if category.confidence > min_confidence:
             result.append(category.name)
-    
-    
-
-
     return result
 
 def filterKeywords(classification_result, min_size = 2):
