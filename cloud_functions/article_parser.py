@@ -41,6 +41,7 @@ def spiderParser(url):
         fullText = articleParser(link)
         # Do something here to transfer the full text & url to another function
         print(fullText)
+        print("----------------------------------------------------------------")
     return
 
 spiderParser("https://www.foxnews.com/")
